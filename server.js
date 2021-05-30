@@ -1,4 +1,3 @@
-
 const express = require("express");
 
 const mongoose = require("mongoose");
@@ -17,13 +16,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch",
-{
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch", { useNewUrlParser: true });
 
 // Start the API server
 app.listen(PORT, function() {
