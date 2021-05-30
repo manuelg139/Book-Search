@@ -8,9 +8,13 @@ function App() {
   
       <div>
         <NavBar />
+        <Header />
+        <Wrapper>
             <Search />
             <Saved />
     
+          </Wrapper>
+          
       </div>
   );
 }
