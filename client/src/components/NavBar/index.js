@@ -6,22 +6,21 @@ function Navbar() {
 
 
         <nav className="navbar navbar-expand-lg text-light">
-            <div className="container">
-                <Link className="navbar-brand" to="/">Google Books</Link>
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link
+            <div className="container" style={{textAlign: "center", marginBottom:"2rem", margin:"auto", }}>
+               
+              
+                <Link className="navbar-brand" to="/">HOME</Link>
+                
+                        <Link className="navbar-brand" 
                             to="/search"
                             className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
-                        > Search</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
+                        > SEARCH</Link>
+                   
+                        <Link className="navbar-brand" 
                             to="/saved"
                             className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-                        >Saved</Link>
-                    </li>
-                </ul>
+                        >FAVORITES</Link>
+                
             </div>
         </nav>
 
